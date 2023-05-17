@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="shortcut icon" href="devchallenges.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/24328714d8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="header">
+    <!-- Checkout header -->
+    <h2>Checkout</h2>
+  </header>
+  <main class="main">
+    <div action="#" class="form">
+      <!-- contact-information -->
+      <div class="contact-info">
+        <h3>Contact information</h3>
+        <!-- email -->
+        <div class="email">
+          <label for="email">Email</label>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" name="email" id="email" placeholder="Enter your email..">
+        </div>
+
+        <!-- Phone -->
+        <div class="phone">
+          <label for="email">Phone</label>
+          <i class="fa-solid fa-phone"></i>
+          <input type="tel" name="phone" id="phone" placeholder="Enter your phone..">
+        </div>
+      </div>
+    
+      <!-- shipping address -->
+      <div class="shipping-address">
+        <h3>Shipping address</h3>
+        <!-- full name -->
+        <div class="full-name">
+          <label for="full-name">Full Name</label>
+          <i class="fa-solid fa-user"></i>
+          <input type="text" name="full-name" id="full-name" value="Rodney Cotton">
+        </div>
+
+        <!-- address -->
+        <div class="address">
+          <label for="address">address</label>
+          <i class="fa-solid fa-house"></i>
+          <input type="text" name="address" id="address" placeholder="Your address..">
+        </div>
+
+        <!-- city -->
+        <div class="city">
+          <label for="city">city</label>
+          <i class="fa-solid fa-city"></i>
+          <input type="city" name="city" id="city" placeholder="Your city..">
+        </div>
+
+        <!-- country and postal code -->
+
+        <div class="combo">
+          <!-- country -->
+          <div class="country">
+            <label for="country">country</label>
+            <div class="combo-grp-icon">
+              <i class="fa-solid fa-globe"></i>
+              <i class="fa-solid fa-square-caret-down" id='caret'></i>
+            </div>
+            <input type="country" name="country" id="country" placeholder="Your country..">
+          </div>
+
+          <!-- postal code -->
+          <div class="postal-code">
+            <label for="postal-code">postal code</label>
+            <i class="fa-solid fa-paste"></i>
+            <input type="postal-code" name="postal-code" id="postal-code" placeholder="Your postal code..">
+          </div>
+        </div>     
+      </div>
+      <!-- checkbox -->
+      <div class="checkbox">
+        <div><input type="checkbox" name="checkbox" id="checkbox"></div>
+        <div><label for="checkbox">Save this information for later</label></div>
+      </div>
+
+      <!-- button -->
+      <div class="btn">
+        <button type="submit">Continue</button>
+      </div>
+
+    </div>
+    
+  
+    <!-- product -->
+    <div class="product">
+      <!-- Bag -->
+      <div class="product-1">
+        <div class="image">
+          <img src="photo1.png" alt="bag">
+        </div>
+        <div class="product-details">
+          <div class="product-name"><p>Vintage Backbag</p></div>
+          <div class="product-prices"><p>$54.99 <s class="strike">$94.99</s></p></div>
+          <div class="quantity">
+            <span class="minus">-</span> <p class="number">1</p> <span class="plus">+</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shoes -->
+      <div class="product-2">
+        <div class="image">
+          <img src="photo2.png" alt="shoes">
+        </div>
+        <div class="product-details">
+          <div class="product-name"><p>Levi Shoes</p></div>
+          <div class="product-prices"><p>$24.99 <s class="strike">$124.99</s></p></div>
+          <div class="quantity">
+            <span class="minus">-</span> <p>1</p> <span class="plus">+</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="shipping">
+        <p class="text">Shipping</p><p class="price">$19</p>
+      </div>
+
+      <div class="total">
+        <p class="text">Total</p><p class="price">$148.98</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>created by <a href="https://devchallenges.io/portfolio/Sotun-1010">The_O_G_Sotun</a> - <a href="devchallenges.io">devchallenges.io</a>
+</footer>
+  
+</body>
+</html>

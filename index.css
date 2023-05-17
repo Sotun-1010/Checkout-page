@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1.5rem 11.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.88px;
+    color: #4E5150;
+    margin-bottom: 51px;
+}
+
+.main {
+    display: flex;
+    padding: 0 auto;
+    gap: 3%;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+}
+
+.contact-info {
+    margin-bottom: 58px;
+}
+
+.contact-info h3, .shipping-address h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 90%;
+    max-width: 450px;
+}
+
+.form label {
+    display: block;
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.form .contact-info .email, .form .contact-info .phone, .form .shipping-address .full-name, .form .shipping-address .address, .form .shipping-address .city, .form .shipping-address .combo .country, .form .shipping-address .combo .postal-code  {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form .shipping-address .combo {
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.form .shipping-address .combo input{
+    width: 100%;        
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.checkbox input {
+    height: 21px;
+    width: 21px;
+} 
+
+.checkbox label {
+    font-size: 12px;
+    color: #828282;
+}
+
+.btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.btn button {
+    padding: 17px 45px;
+    border-radius: 12px;
+    color: white;
+    background: #F2994A;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+}
+
+.form input {
+    padding: .8rem 2rem;
+    border-radius: 12px;
+    outline: none;
+    margin-top: -10px;
+}
+
+.form i {
+    position: relative;
+    top: 1.3rem;
+    left: .5rem;
+    max-width: 5%;
+}
+
+.full-name input[value="Rodney Cotton"] {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.combo-grp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 12%;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 12px;
+    background: #F2F2F2;
+    padding: 1.5rem 5%;
+    max-height: 540px;
+}
+
+.product .image {
+    width: 134.21px;
+    height: 136.27px;
+}
+
+.product .image img{
+    height: 100%;
+    width: 100%;
+    max-width: 134.21px;
+    max-height: 136.27px;
+    border-radius: 13px;
+}
+
+.product .product-1, .product .product-2 {
+    display: flex;
+    align-items: start;
+    gap: 7%;
+    margin-bottom: 31px;
+}
+
+.product .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;  
+}
+
+.product .product-details .product-name p{
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    width: 162px;
+}
+
+.product .product-details .product-prices {
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-bottom: 31px;
+    font-weight: 600;
+    color: #F2994A;
+}
+
+.product .product-details .product-prices .strike {
+    font-size: 12px;
+    line-height: 14.63px;
+    color: #264b3f;
+}
+
+.product .product-details .quantity {
+    border: 1px solid #828282;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 135px;
+    min-height: 52px;
+    padding: 15px;
+}
+
+.product .product-details .quantity .minus, .product .product-details .quantity .plus {
+    font-size: 21px;
+    background: #E0E0E0;
+    color: #828282;
+    padding: 1px 4px;
+    border: none;
+    border-radius: 4px;
+}
+
+.shipping { 
+    margin-top: 64px;
+    width: 100%;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: 1px solid #BDBDBD;
+    padding: .6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.shipping .text, .total .text{
+    font-size: 18px;
+    line-height: 21.94px;
+    font-weight: 600;
+}
+
+.shipping .price, .total .price {
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 600;
+}
+
+.total {
+    width: 100%;
+    padding: .6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1028px) {
+    body {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .main {
+        gap: 1.5%;
+    }
+}
+
+@media screen and (max-width: 874px) {
+    body {
+        padding: 1.5rem 3.5rem;
+    }
+
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .product {
+        padding: 3% 10%; 
+    }
+
+    .form .shipping-address .combo input{
+        width: 300px;        
+    }
+
+    .combo-grp-icon {
+        padding-right: 10%;
+    }
+
+
+    .form {
+        width: 100%;
+        max-width: none;
+        margin-top: 49px;
+    }
+}
+
+@media screen and (max-width: 684px) {
+    body {
+        padding: 1.5rem 5rem;
+    }
+
+    .form .shipping-address .combo input{
+        width: 100%;        
+    }
+}
+
+
+@media screen and (max-width: 578px) {
+    body {
+        padding: 1.5rem 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 496px) {
+    body {
+        padding: 1.5rem 1rem;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    .footer{
+        font-size: 12px;
+        margin-top: -8rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .product {
+        align-items: center;
+    }
+
+    #caret {
+        margin-right: 3%;
+    }
+
+    .product .product-1, .product .product-2 {
+        gap: 3%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    /* reduce product image size, text and price size and quantity padding  */
+    #caret {
+        margin-right: 8%;
+    }
+
+    .product .product-details .quantity {
+        min-width: 75px;
+        padding: 3px;
+        margin-top: -20px;
+        font-size: 12px;
+    }
+
+    .product .image img{
+        height: 80%;
+        width: 80%;
+        max-width: 124.21px;
+        margin: 0% 10%;
+    }
+
+    .product .image {
+        width: 124.21px;
+    }
+
+    .product .product-details .product-prices {
+        font-size: 12px;
+    }
+    .product .product-details .product-prices .strike {
+        font-size: 10px;
+    }
+    .product .product-details .product-name p {
+        font-size: 12px;
+    }
+}
